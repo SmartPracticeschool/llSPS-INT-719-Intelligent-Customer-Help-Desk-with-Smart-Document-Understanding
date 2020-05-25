@@ -1,0 +1,535 @@
+{
+  "intents": [
+    {
+      "intent": "ProductInformation",
+      "examples": [
+        {
+          "text": "What is the warranty of the product?"
+        },
+        {
+          "text": "standby screen"
+        },
+        {
+          "text": "What are the functions of thermostat?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "thanks",
+      "examples": [
+        {
+          "text": "Thank you"
+        },
+        {
+          "text": "Thanks"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "GoodBye",
+      "examples": [
+        {
+          "text": "Bbye"
+        },
+        {
+          "text": "Goodbye"
+        },
+        {
+          "text": "Bye"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Enquiry",
+      "examples": [
+        {
+          "text": "Describe the process of web registration"
+        },
+        {
+          "text": "equipment configuration"
+        },
+        {
+          "text": "How to clean thermostat?"
+        },
+        {
+          "text": "How do I set up thermostat?"
+        },
+        {
+          "text": "How to manage my account?"
+        },
+        {
+          "text": "How to install a thermostat?"
+        },
+        {
+          "text": "what are sensor settings?"
+        },
+        {
+          "text": "How to customize thermostat?"
+        },
+        {
+          "text": "What are the reminders and alerts of thermostat?"
+        },
+        {
+          "text": "How to configure WiFi settings of thermostat?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hi"
+        },
+        {
+          "text": "Good afternoon"
+        },
+        {
+          "text": "Hey"
+        },
+        {
+          "text": "Good morning"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "InstallationSettings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "heat pump",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "humidifier",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "dehumidifier",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "furnace",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ventilator",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "equipment wiring",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Greetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "How are you?",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Hello",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Hi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Hey",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Functions",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "operation mode",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "homescreen",
+          "synonyms": [
+            "home screen"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "quick changes",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "temperature",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "weather",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "standby screen",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Customizing",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "smart recovery",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "access control",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "heating or cooling ranges",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "temperature display",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Caring",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "resetting",
+          "synonyms": [
+            "reset"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "cleaning",
+          "synonyms": [
+            "clean"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "rebooting",
+          "synonyms": [
+            "reboot"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "troubleshooting",
+          "synonyms": [
+            "troubleshoot"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "SetupProcess",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "sensor settings",
+          "synonyms": [
+            "sensor"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "mobile registration",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "web registration",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "equipment configuration",
+          "synonyms": [
+            "equipment"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "accessory confirmation",
+          "synonyms": [
+            "accessory"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "https://us-south.functions.cloud.ibm.com/api/v1/web/drishti.sce17%40sot.pdpu.ac.in_dev/default/MyAction.json",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "\"<?$webhook_result_2.passages[0].passage_text?>\""
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_4_1589888673687",
+      "conditions": "$webhook_result_2",
+      "dialog_node": "response_2_1589888723946"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Sorry didn't find it"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1589738490884",
+      "conditions": "anything_else",
+      "dialog_node": "response_10_1589822485408",
+      "previous_sibling": "response_4_1589822481118"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\"<?$webhook_result_1.passages[0].passage_text?>\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1589738490884",
+      "conditions": "$webhook_result_1",
+      "dialog_node": "response_4_1589822481118"
+    },
+    {
+      "type": "standard",
+      "title": "Thanks",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Your Welcome"
+              },
+              {
+                "text": "Welcome"
+              },
+              {
+                "text": "My Pleasure"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#thanks",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_5_1589892452239",
+      "previous_sibling": "node_4_1589888673687"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello, how may I help you?"
+              },
+              {
+                "text": "Hey"
+              },
+              {
+                "text": "Hello"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#Greetings",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1589565049868",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Product Information",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "input": "<?input.text?>"
+          },
+          "result_variable": "webhook_result_2"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#ProductInformation",
+      "dialog_node": "node_4_1589888673687",
+      "previous_sibling": "node_1_1589738490884"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_5_1589892452239",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Enqiury",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "input": "<?input.text?>"
+          },
+          "result_variable": "webhook_result_1"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Enquiry",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1589738490884",
+      "previous_sibling": "node_1_1589565049868"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "My first skill",
+  "language": "en",
+  "description": ""
+}

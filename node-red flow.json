@@ -1,0 +1,146 @@
+[
+	{
+	"id":"86aeef83.1e15b8",
+	"type":"tab",
+	"label":"Flow 1",
+	"disabled":false,
+	"info":""
+	},
+	
+	{
+	"id":"f2f2649a.0d0d98",
+	"type":"debug",
+	"z":"86aeef83.1e15b8",
+	"name":"","active":true,
+	"console":"false",
+	"complete":"false",
+	"x":930,
+	"y":200,
+	"wires":[]
+	},
+	
+	{
+	"id":"76de03e5.098c44",
+	"type":"watson-conversation-v1",
+	"z":"86aeef83.1e15b8",
+	"name":"",
+	"workspaceid":"7b1e239a-87be-47b8-8038-0a463a2bf1ee",
+	"multiuser":false,
+	"context":true,
+	"empty-payload":false,
+	"service-endpoint":"https://api.eu-gb.assistant.watson.cloud.ibm.com/instances/d579859c-93d7-4e32-87a3-344b382a9363",
+	"timeout":"",
+	"optout-learning":false,
+	"x":640,
+	"y":300,
+	"wires":[["dc93f38d.3532c","f2f2649a.0d0d98"]]
+	},
+	
+	{
+	"id":"dc93f38d.3532c",
+	"type":"function",
+	"z":"86aeef83.1e15b8",
+	"name":"",
+	"func":"msg.payload = msg.payload.output.text[0];\nreturn msg;",
+	"outputs":1,
+	"noerr":0,
+	"x":890,
+	"y":380,
+	"wires":[["3caae9e9.3ffa1e"]]
+	},
+	
+	{
+	"id":"47bb4732.9c5dc8",
+	"type":"ui_form",
+	"z":"86aeef83.1e15b8",
+	"name":"",
+	"label":"",
+	"group":"100730a2.9834bf",
+	"order":1,
+	"width":0,
+	"height":0,
+	"options":[{"label":"Enter your query","value":"text","type":"text","required":true,"rows":null}],
+	"formValue":{"text":""},
+	"payload":"",
+	"submit":"submit",
+	"cancel":"cancel",
+	"topic":"",
+	"x":110,
+	"y":240,
+	"wires":[["31930c87.b1fbb4"]]
+	},
+	
+	{
+	"id":"31930c87.b1fbb4",
+	"type":"function",
+	"z":"86aeef83.1e15b8",
+	"name":"",
+	"func":"msg.payload = msg.payload.text;\nreturn msg;",
+	"outputs":1,
+	"noerr":0,
+	"x":350,
+	"y":300,
+	"wires":[["76de03e5.098c44","caa68c10.dd0eb8"]]
+	},
+	
+	{
+	"id":"3caae9e9.3ffa1e",
+	"type":"ui_text",
+	"z":"86aeef83.1e15b8",
+	"group":"21999c32.bd337c",
+	"order":3,
+	"width":"0",
+	"height":"0",
+	"name":"Bot",
+	"label":"Bot",
+	"format":"{{msg.payload}}","layout":"row-spread","x":1070,"y":500,"wires":[]
+	},
+	
+	{
+	"id":"caa68c10.dd0eb8",
+	"type":"ui_text",
+	"z":"86aeef83.1e15b8",
+	"group":"21999c32.bd337c",
+	"order":1,
+	"width":0,
+	"height":0,
+	"name":"You",
+	"label":"You",
+	"format":"{{msg.payload}}",
+	"layout":"row-spread","x":470,"y":500,"wires":[]
+	},
+	
+	{
+	"id":"100730a2.9834bf",
+	"type":"ui_group",
+	"z":"",
+	"name":"Chatbot",
+	"tab":"cdaea02e.4c0d78",
+	"order":1,
+	"disp":true,
+	"width":"10",
+	"collapse":true
+	},
+	
+	{
+	"id":"21999c32.bd337c",
+	"type":"ui_group",
+	"z":"",
+	"name":"Chat",
+	"tab":"cdaea02e.4c0d78",
+	"order":2,
+	"disp":true,
+	"width":"25",
+	"collapse":false
+	},
+	
+	{
+	"id":"cdaea02e.4c0d78",
+	"type":"ui_tab",
+	"z":"",
+	"name":"Customer Help Desk",
+	"icon":"dashboard",
+	"disabled":false,
+	"hidden":false
+	}
+]

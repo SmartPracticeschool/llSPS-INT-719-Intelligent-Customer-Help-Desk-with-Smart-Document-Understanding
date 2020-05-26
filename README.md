@@ -6,4 +6,4 @@ But here in this project by adding an extra feature of smart document understand
 
 This project is implemented by using IBM cloud and it's functions such as Watson Assistant, Watson discovery, Cloud Function and Node-Red. For Watson Discovery the document used is ecobee3_userguide which is configured and then trained. 
 
-Youtube link : https://youtu.be/Pvyn1SVcBV4
+Youtube link : https://youtu.be/n8eONEtETfI
